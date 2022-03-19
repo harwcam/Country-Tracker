@@ -21,3 +21,38 @@ header h1 {
   padding-left: 1em;
   padding-top: 1em;
 }
+nav {
+  background-color: darkgoldenrod;
+  color: darkslategray;
+  font-weight: bold;
+  padding-top: 35x;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  border-bottom: 2px solid black;
+}
+section {
+  background-image: linear-gradient(gray, rgb(94, 92, 92));
+  box-sizing: border-box;
+}
+footer {
+  background-color: darkslategray;
+  color: azure;
+  font-size: medium;
+  text-align: center;
+  padding: 1em;
+}
+.content {
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.country {
+  padding-right: 50px;
+  flex-grow: 1;
+}
+.stats {
+  padding-right: 50px;
+  flex-grow: 1.5;
+}
+.dropdown {
+}
