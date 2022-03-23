@@ -13,15 +13,22 @@
                 <h1>Track A Country</h1>
             </div>
         </header>
-
-        <nav class="drop-down">
-                the drop down box will go here
-        </nav>
-        
+        <main class="flex-row justify-space-between">
+            <nav class="col-12 col-md-4">
+                <div class="card">
+                    <h3 class="card-header text uppercase">Search By Country</h3>
+                    <form id="user-form" class="card-body">
+                        <label class="form-label" for="country-name">Country</label>
+                        <input name="country" id="country-name" type="text" autofocus="true" class="form-input" />
+                        <button type="submit" class="btn">Get Country</button>
+                    </form>
+                </div>
+            </nav>
+        </main>
         <section>
             <div class="content">
                 <div class="country">svg image of selected country goes here</div>
-                <div class="stats">country stats go here</div>
+                <div id="stats" class="stats">country stats go here</div>
             </div>
         </section>
 
@@ -34,5 +41,6 @@
         <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="./assets/js/script.js"></script>
     </body>
 </html>
