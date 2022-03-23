@@ -4,55 +4,74 @@
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.hero {
-  background-image: url(../css/EuropeNight.jpg);
-  height: 400px;
-}
-
-header {
-  background-color: darkslategray;
+.header {
+  background-color: rgb(82, 82, 82);
   color: azure;
   font-weight: bold;
-  padding-bottom: 1.6em;
-  border-bottom: 5px solid black;
+  padding-bottom: 1em;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
 }
-header h1 {
+.header h1 {
   padding-left: 1em;
   padding-top: 1em;
-}
-nav {
-  background-color: darkgoldenrod;
-  color: darkslategray;
   font-weight: bold;
-  padding-top: 35x;
-  padding-bottom: 25px;
-  padding-left: 15px;
+  font-size: larger;
+}
+.header p {
+  padding-left: 1em;
+  padding-top: 0.5em;
+}
+#navBar {
+  background-color: rgb(104, 50, 83);
   border-bottom: 2px solid black;
 }
-section {
+#navButton {
+  background-color: rgb(241, 247, 248);
+  color: darkslategray;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main {
   background-image: linear-gradient(gray, rgb(94, 92, 92));
   box-sizing: border-box;
 }
 footer {
-  background-color: darkslategray;
+  background-color: rgb(82, 82, 82);
   color: azure;
   font-size: medium;
   text-align: center;
   padding: 1em;
 }
-.content {
-  padding: 100px;
-  display: flex;
-  flex-direction: row;
+#brazil {
+  background-image: url("../images/brazil-map.jpg");
 }
-.country {
-  padding-right: 50px;
-  flex-grow: 1;
+#bangladesh {
+  background-image: url("../images/bangladesh-map.jpg");
 }
-.stats {
-  padding-right: 50px;
-  flex-grow: 1.5;
+#china {
+  background-image: url("../images/china-map.jpg");
 }
-.dropdown {
+#india {
+  background-image: url("../images/");
+}
+#indonesia {
+  background-image: url("../images/indonesia-map.jpg");
+}
+#mexico {
+  background-image: url("../images/mexico-map.jpg");
+}
+#nigeria {
+  background-image: url("../images/nigeria-map.jpg");
+}
+#pakistan {
+  background-image: url("");
+}
+#ukraine {
+  background-image: url("../images/ukraine-map.jpeg");
+}
+#usa {
+  background-image: url("../images/usa-map.jpg");
 }
