@@ -35,7 +35,7 @@
   margin-bottom: 10px;
 }
 main {
-  background-image: linear-gradient(gray, rgb(94, 92, 92));
+  background-image: linear-gradient(rgb(182, 179, 179), rgb(70, 66, 66));
   box-sizing: border-box;
 }
 footer {
@@ -44,6 +44,10 @@ footer {
   font-size: medium;
   text-align: center;
   padding: 1em;
+}
+#care {
+  height: 600px;
+  object-fit: contain;
 }
 /*img {
   height: 400px;
