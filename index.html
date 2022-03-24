@@ -3,27 +3,109 @@
     <head>
         <meta charset="UTF-8">
         <link href=".//assets/css/styles.css" rel="stylesheet">
-        <title>EuroTrack</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Track This!</title>
     </head>
 
     <body>
         <header>
-            <div class="hero"></div>
-            <div>
+            <div id="demo" class="carousel slide" data-bs-ride="carousel"></div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/images/brazil.jpg" alt="Brazil Panorama" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/images/china.jpg" alt="Great Wall" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/images/india.jpg" alt="Taj Mahal" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/mexico.jpg" alt="Mexico" class="d-block" style="width:100%">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/usa.jpg" alt="Statue of Liberty" class="d-block" style="width:100%">
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+            <div class="header">
                 <h1>Track A Country</h1>
+                <p>Select a country to it's reveal current stats</p>
             </div>
         </header>
 
-        <nav class="drop-down">
-                the drop down box will go here
-        </nav>
+        <div class="drop-down" id="navBar">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" id="navButton">
+                Select a Country
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class= "dropdown-item" href="#brazil">Brazil</a></li>
+                <li><a class= "dropdown-item" href="#bangladesh">Bangladesh</a></li>
+                <li><a class= "dropdown-item" href="#china">China</a></li>
+                <li><a class= "dropdown-item" href="#india">India</a></li>
+                <li><a class= "dropdown-item" href="#indonesia">Indonesia</a></li>
+                <li><a class= "dropdown-item" href="#mexico">Mexico</a></li>
+                <li><a class= "dropdown-item" href="#nigeria">Nigeria</a></li>
+                <li><a class= "dropdown-item" href="#pakistan">Pakistan</a></li>
+                <li><a class= "dropdown-item" href="#ukraine">Ukraine</a></li>
+                <li><a class= "dropdown-item" href="#usa">United States of America</a></li>
+            </ul>
+        </div>
         
-        <section>
-            <div class="content">
-                <div class="country">svg image of selected country goes here</div>
-                <div class="stats">country stats go here</div>
+        <main>
+            <div class="row">
+                 <div class="left" class="col">
+                    <div class="container" id="brazil">
+                      
+                    </div>
+                    <div class="container" id="bangladesh">
+                      
+                    </div>
+                    <div class="container"  id="china">
+                     
+                    </div>
+                    <div class="container" id="india">
+                     
+                    </div>
+                    <div class="container" id="indonesia">
+                      
+                    </div>
+                    <div class="container" id="mexico">
+                      
+                    </div>
+                    <div class="container" id="nigeria">
+                     
+                    </div>
+                    <div class="container" id="pakistan">
+                      
+                    </div>
+                    <div class="container" id="ukraine">
+                     
+                    </div>
+                    <div class="container" id="usa">
+                     
+                    </div>
+                 </div>
+                
+                <div class="col">country stats go here
+
+                </div>
             </div>
-        </section>
+        </main>
 
         <footer>
             <div> &copy;2022 Thanks for Stopping By!</div>
