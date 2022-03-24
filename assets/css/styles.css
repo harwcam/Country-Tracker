@@ -45,33 +45,12 @@ footer {
   text-align: center;
   padding: 1em;
 }
-#brazil {
-  background-image: url("../images/brazil-map.jpg");
+img {
+  height: 400px;
+  width: 400px;
+  object-fit: contain;
 }
-#bangladesh {
-  background-image: url("../images/bangladesh-map.jpg");
-}
-#china {
-  background-image: url("../images/china-map.jpg");
-}
-#india {
-  background-image: url("../images/");
-}
-#indonesia {
-  background-image: url("../images/indonesia-map.jpg");
-}
-#mexico {
-  background-image: url("../images/mexico-map.jpg");
-}
-#nigeria {
-  background-image: url("../images/nigeria-map.jpg");
-}
-#pakistan {
-  background-image: url("");
-}
-#ukraine {
-  background-image: url("../images/ukraine-map.jpeg");
-}
-#usa {
-  background-image: url("../images/usa-map.jpg");
+.left {
+  margin-left: 1em;
+  margin-top: 1em;
 }
