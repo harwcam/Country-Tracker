@@ -1,5 +1,6 @@
 var apiUrl = " http://api.worldbank.org/v2/country/br?format=json"
 
+dropdownEl = document.querySelector("#submit-btn")
 worldBankCountries = {
     'China' : 'CN',
     'India' : 'IN',
@@ -42,9 +43,10 @@ var getCountryData = function(apiUrl) {
     });
 };
 
-var getIsoCode = function(country) {
-    
+$('#country-selector').submit(function(event) {
+    alert("Testing");
+    event.preventDefault();
+}) 
 
-}
-
-getCountryData(apiUrl)
+getCountryData(apiUrl);
+// dropdownEl.addEventListener("submit", getIsoCode);

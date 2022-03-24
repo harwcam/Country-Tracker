@@ -49,23 +49,28 @@
             </div>
         </header>
 
-        <form action="/action_page.php">
-          <label for="countries">Choose a country:</label>
-          <select name="countries" id="countries">
-            <option value="brazil">Brazil</option>
-            <option value="bangladesh">Bangladesh</option>
-            <option value="china">China</option>
-            <option value="india">India</option>
-            <option value="indonesia">Indonesia</option>
-            <option value="mexico">Mexico</option>
-            <option value="nigeria">Nigeria</option>
-            <option value="pakistan">Pakistan</option>
-            <option value="ukraine">Ukraine</option>
-            <option value="usa">United States of America</option>
-          </select>
+        <!-- <select id="dropdown"> -->
+          <!-- <label for="countries">Choose a country:</label> -->
+          <form id = "country-selector">
+            <label for="country">Select a Country</label>
+            <button type="submit" id="submit=btn">Submit</button>
+            <select name="countries" id="countries-dropdown">
+              <option value="brazil">Brazil</option>
+              <option value="bangladesh">Bangladesh</option>
+              <option value="china">China</option>
+              <option value="india">India</option>
+              <option value="indonesia">Indonesia</option>
+              <option value="mexico">Mexico</option>
+              <option value="nigeria">Nigeria</option>
+              <option value="pakistan">Pakistan</option>
+              <option value="ukraine">Ukraine</option>
+              <option value="usa">United States of America</option>
+            </select>
+          </form>
+
           <br><br>
-          <input type="submit" value="Submit">
-        </form>
+          
+        <!-- </select> -->
         
         <main>
             <div class="row">
