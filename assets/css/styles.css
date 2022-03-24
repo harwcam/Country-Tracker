@@ -45,11 +45,11 @@ footer {
   text-align: center;
   padding: 1em;
 }
-img {
+/*img {
   height: 400px;
   width: 400px;
   object-fit: contain;
-}
+}*/
 .left {
   margin-left: 1em;
   margin-top: 1em;
