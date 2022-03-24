@@ -48,23 +48,23 @@
             </div>
         </header>
 
-        <div class="drop-down" id="navBar">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" id="navButton">
-                Select a Country
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class= "dropdown-item" href="#brazil">Brazil</a></li>
-                <li><a class= "dropdown-item" href="#bangladesh">Bangladesh</a></li>
-                <li><a class= "dropdown-item" href="#china">China</a></li>
-                <li><a class= "dropdown-item" href="#india">India</a></li>
-                <li><a class= "dropdown-item" href="#indonesia">Indonesia</a></li>
-                <li><a class= "dropdown-item" href="#mexico">Mexico</a></li>
-                <li><a class= "dropdown-item" href="#nigeria">Nigeria</a></li>
-                <li><a class= "dropdown-item" href="#pakistan">Pakistan</a></li>
-                <li><a class= "dropdown-item" href="#ukraine">Ukraine</a></li>
-                <li><a class= "dropdown-item" href="#usa">United States of America</a></li>
-            </ul>
-        </div>
+        <form action="/action_page.php">
+          <label for="countries">Choose a country:</label>
+          <select name="countries" id="countries">
+            <option value="brazil">Brazil</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="china">China</option>
+            <option value="india">India</option>
+            <option value="indonesia">Indonesia</option>
+            <option value="mexico">Mexico</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="ukraine">Ukraine</option>
+            <option value="usa">United States of America</option>
+          </select>
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
         
         <main>
             <div class="row">
