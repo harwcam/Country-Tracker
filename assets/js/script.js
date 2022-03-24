@@ -1,5 +1,20 @@
 var apiUrl = " http://api.worldbank.org/v2/country/br?format=json"
 
+worldBankCountries = {
+    'China' : 'CN',
+    'India' : 'IN',
+    'United States' : 'US',
+    'Indonesia' : 'ID',
+    'Pakistan' : 'PK',
+    'Brazil' : 'BR',
+    'Nigeria' : 'NG',
+    'Bangladesh' : 'BD',
+    'Ukraine' : 'UA',
+    'Mexico' : 'MX'
+}
+
+console.log(worldBankCountries['China'])
+
 var getCountryData = function(apiUrl) {
     fetch(apiUrl).then(function(response) {
         if (response.ok) {
@@ -26,5 +41,10 @@ var getCountryData = function(apiUrl) {
         console.log(error);
     });
 };
+
+var getIsoCode = function(country) {
+    
+
+}
 
 getCountryData(apiUrl)
