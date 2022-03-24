@@ -35,7 +35,7 @@
   margin-bottom: 10px;
 }
 main {
-  background-image: linear-gradient(gray, rgb(94, 92, 92));
+  background-image: linear-gradient(rgb(182, 179, 179), rgb(70, 66, 66));
   box-sizing: border-box;
 }
 footer {
@@ -44,6 +44,10 @@ footer {
   font-size: medium;
   text-align: center;
   padding: 1em;
+}
+#care {
+  height: 600px;
+  object-fit: contain;
 }
 /*img {
   height: 400px;
@@ -54,3 +58,29 @@ footer {
   margin-left: 1em;
   margin-top: 1em;
 }
+form {
+  padding-left: 1em;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  background-color: rgb(124, 21, 85);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+/* <div class="drop-down" id="navBar">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" id="navButton">
+                Select a Country
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class= "dropdown-item" href="#brazil">Brazil</a></li>
+                <li><a class= "dropdown-item" href="#bangladesh">Bangladesh</a></li>
+                <li><a class= "dropdown-item" href="#china">China</a></li>
+                <li><a class= "dropdown-item" href="#india">India</a></li>
+                <li><a class= "dropdown-item" href="#indonesia">Indonesia</a></li>
+                <li><a class= "dropdown-item" href="#mexico">Mexico</a></li>
+                <li><a class= "dropdown-item" href="#nigeria">Nigeria</a></li>
+                <li><a class= "dropdown-item" href="#pakistan">Pakistan</a></li>
+                <li><a class= "dropdown-item" href="#ukraine">Ukraine</a></li>
+                <li><a class= "dropdown-item" href="#usa">United States of America</a></li>
+            </ul>
+        </div> */
