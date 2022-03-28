@@ -1,7 +1,8 @@
 
 dropdownEl = document.querySelector("#submit-btn")
-capitalEl = document.querySelector("#capital")
-regionEl = document.querySelector("#region")
+capitalEl = document.querySelector("#capital span")
+regionEl = document.querySelector("#region span")
+coordinatesEl = document.querySelector('#coordinates')
 
 
 worldBankCountries = {
@@ -23,6 +24,11 @@ var getCountryData = function(apiUrl) {
     fetch(apiUrl).then(function(response) {
         if (response.ok) {
             response.json().then(function(data) {
+                $(capitalEl).text("Capital:")
+                $(regionEl).text("Region:")
+                $(coordinatesEl).text("Coordinates:")
+
+
                 var capitalCity = ""
                 var latitude = ""
                 var longitude = ""
@@ -33,6 +39,11 @@ var getCountryData = function(apiUrl) {
                 var longitude = data[1]["0"]["longitude"]
                 var region = data[1]["0"]["region"]["value"]
                 var coordinates = latitude +", " + longitude
+
+                $(capitalEl.append(" " + capitalCity))
+                $(coordinatesEl.append(" " + coordinates))
+                $(regionEl.append( " " + region))
+                
                 console.log(capitalCity)
                 console.log(coordinates)
                 console.log(region)
