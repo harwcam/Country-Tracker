@@ -43,75 +43,66 @@
                 </div>
               </div>
         
-            <div class="header">
+            <div class="header d-flex">
                 <h1>Track A Country</h1>
                 <p>Select a country to it's reveal current stats</p>
+                  <select class="btn btn-secondary dropdown-toggle mr-auto" name="countries-dropdown" id="countries-dropdown">
+                    <option value="brazil">Brazil</option>
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="china">China</option>
+                    <option value="india">India</option>
+                    <option value="indonesia">Indonesia</option>
+                    <option value="mexico">Mexico</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="ukraine">Ukraine</option>
+                    <option value="usa">United States of America</option>
+                  </select>
+                
             </div>
         </header>
 
-        <!-- <select id="dropdown"> -->
-          <!-- <label for="countries">Choose a country:</label> -->
-          <form id = "country-selector">
-            <label for="country">Select a Country</label>
-            <button type="submit" id="submit=btn">Submit</button>
-            <select name="countries" id="countries-dropdown">
-              <option value="brazil">Brazil</option>
-              <option value="bangladesh">Bangladesh</option>
-              <option value="china">China</option>
-              <option value="india">India</option>
-              <option value="indonesia">Indonesia</option>
-              <option value="mexico">Mexico</option>
-              <option value="nigeria">Nigeria</option>
-              <option value="pakistan">Pakistan</option>
-              <option value="ukraine">Ukraine</option>
-              <option value="usa">United States of America</option>
-            </select>
-          </form>
 
-          <br><br>
+       
+
+          <main>
+          <div class="row">
+            <div id="left-col" class="col">
+               <ul id="capital">
+                 Capital City:
+               </ul>
+               <ul id="coordinates">
+                 Latitude & Longitude:
+               </ul>
+               <ul id="region">
+                 Region:
+               </ul>
+            </div>
+           </div>
+          <main>
           
-        <!-- </select> -->
+         
         
-        <main>
+        <!-- <main>
             <div class="row">
-                 <div class="left" class="col">
-                    <div class="container" id="brazil">
-                      
-                    </div>
-                    <div class="container" id="bangladesh">
-                      
-                    </div>
-                    <div class="container"  id="china">
-                     
-                    </div>
-                    <div class="container" id="india">
-                     
-                    </div>
-                    <div class="container" id="indonesia">
-                      
-                    </div>
-                    <div class="container" id="mexico">
-                      
-                    </div>
-                    <div class="container" id="nigeria">
-                     
-                    </div>
-                    <div class="container" id="pakistan">
-                      
-                    </div>
-                    <div class="container" id="ukraine">
-                     
-                    </div>
-                    <div class="container" id="usa">
-                     
-                    </div>
-                 </div>
-                
-                <div class="col">country stats go here
+                 <div id="left-col" class="col">
+
+                <div class="col">
+                  <li>
+                    <ul>
+                      Capital City:
+                    </ul>
+                    <ul>
+                      Latitude & Longitude:
+                    </ul>
+                    <ul>
+                      Region:
+                    </ul>
+                  </li>
 
                 </div>
             </div>
-        </main>
+        </main> -->
 
         <footer>
             <div> &copy;2022 Thanks for Stopping By!</div>

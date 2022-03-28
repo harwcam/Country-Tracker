@@ -1,10 +1,13 @@
-var apiUrl = " http://api.worldbank.org/v2/country/br?format=json"
 
 dropdownEl = document.querySelector("#submit-btn")
+capitalEl = document.querySelector("#capital")
+regionEl = document.querySelector("#region")
+
+
 worldBankCountries = {
     'China' : 'CN',
     'India' : 'IN',
-    'United States' : 'US',
+    'United States of America' : 'US',
     'Indonesia' : 'ID',
     'Pakistan' : 'PK',
     'Brazil' : 'BR',
@@ -14,7 +17,7 @@ worldBankCountries = {
     'Mexico' : 'MX'
 }
 
-console.log(worldBankCountries['China'])
+
 
 var getCountryData = function(apiUrl) {
     fetch(apiUrl).then(function(response) {
@@ -43,10 +46,13 @@ var getCountryData = function(apiUrl) {
     });
 };
 
-$('#country-selector').submit(function(event) {
-    alert("Testing");
-    event.preventDefault();
-}) 
 
-getCountryData(apiUrl);
-// dropdownEl.addEventListener("submit", getIsoCode);
+$('#countries-dropdown').change(function() {
+   var countryKey = $('#countries-dropdown option:selected').text().trim()
+   var isoCode = worldBankCountries[countryKey]
+   var apiURL = `http://api.worldbank.org/v2/country/${isoCode}?format=json`
+   getCountryData(apiURL)
+})
+
+
+
