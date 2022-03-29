@@ -21,7 +21,6 @@ worldBankCountries = {
 }
 
 
-
 var getWorldBankCountryData = function(apiUrl) {
     fetch(apiUrl).then(function(response) {
         if (response.ok) {
